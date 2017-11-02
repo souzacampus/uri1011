@@ -1,0 +1,22 @@
+using System;
+using System.Globalization;
+
+namespace uri1011
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double R, vol, pi;
+
+            R = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            pi = 3.14159;
+
+            vol = (4 / 3.0) * pi * Math.Pow(R, 3);
+
+            Console.WriteLine("VOLUME = " + vol.ToString("F3", CultureInfo.InvariantCulture));
+
+        }
+    }
+}
